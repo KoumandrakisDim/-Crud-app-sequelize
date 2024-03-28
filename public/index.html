@@ -26,10 +26,13 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th>First Name <input class="form-control searchField" id="searchFirstName" onkeydown="searchOnEnter(event)">
+                    <th>First Name <input class="form-control searchField" id="searchFirstName"
+                            onkeydown="searchOnEnter(event)">
                     </th>
-                    <th>Last Name <input class="form-control searchField" id="searchLastName" onkeydown="searchOnEnter(event)"></th>
-                    <th>Email <input class="form-control searchField" id="searchEmail" onkeydown="searchOnEnter(event)"></th>
+                    <th>Last Name <input class="form-control searchField" id="searchLastName"
+                            onkeydown="searchOnEnter(event)"></th>
+                    <th>Email <input class="form-control searchField" id="searchEmail" onkeydown="searchOnEnter(event)">
+                    </th>
                     <th></th>
                 </tr>
             </thead>
@@ -38,7 +41,7 @@
 
         <nav aria-label="Page navigation">
             <div class="d-flex justify-content-center">
-                <div>
+                <div class="d-flex align-items-center">
                     <ul class="pagination justify-content-center">
                         <li class="page-item" id="prevPage">
                             <a class="page-link" href="#" aria-label="Previous">
@@ -52,7 +55,10 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="d-flex align-items-center ml-2">
+                    <span>Page: </span><span id="pageNumber"></span>
+                </div>
+                <div class="d-flex align-items-center">
                     <select class="form-control mx-2" id="recordsPerPage">
                         <option value="10" selected>10</option>
                         <option value="25">25</option>

@@ -44,19 +44,20 @@ class PersonController {
             success: function (persons) {
                 var $personsList = $('#personsList');
                 $personsList.empty();
-                console.log(persons);
-                let i = (page - 1) * 10 + 1; // Calculate index based on page
+
+                let i = (page - 1) * 10 + 1;
                 persons.persons.forEach(function (person) {
                     $personsList.append(`<tr id=person_${person.id}>` +
-                        '<td>' + i + '</td>' + // Display the index
+                        '<td>' + i + '</td>' +
                         '<td>' + person.firstName + '</td>' +
                         '<td>' + person.lastName + '</td>' +
                         '<td>' + person.email + '</td>' +
-                        '<td><i class="bi bi-pencil text-secondary editButton gridButton" onclick="editPerson(' + person.id + ')"></i>' +
+                        '<td style="min-width: 100px"><i class="bi bi-pencil text-secondary editButton gridButton" onclick="editPerson(' + person.id + ')"></i>' +
                         '<i class="bi bi-trash text-danger gridButton" onclick="personController.deletePerson(' + person.id + ')"></i></td>' +
                         '</tr>');
                     i++;
                 });
+                $('#pageNumber').text(page);
             },
             error: function (error) {
                 console.error('Error fetching persons:', error.responseJSON);
