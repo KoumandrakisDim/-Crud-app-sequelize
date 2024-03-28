@@ -22,17 +22,17 @@ This is a basic Express CRUD application for managing a list of persons.
 3. Install dependencies:
 
    ```bash
-npm install
+   npm install
 
 4. Run database migrations to create the necessary tables:
 
    ```bash
-npx sequelize-cli db:migrate
+   npx sequelize-cli db:migrate
 
 5. Start the application:
 
    ```bash
-node index.js
+   node index.js
 
 6. Open your web browser and navigate to http://localhost:3000 to view the application.
 
