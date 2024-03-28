@@ -17,7 +17,7 @@ This is a basic Express CRUD application for managing a list of persons.
 2. Navigate to the project directory:
 
    ```bash
-cd <your-project-name>
+   cd <your-project-name>
 
 3. Install dependencies:
 
