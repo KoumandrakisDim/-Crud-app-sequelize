@@ -1,0 +1,27 @@
+.editButton{
+    margin-right: 20%;
+}
+
+.alert {
+    opacity: 0;
+    transition: ease-in;
+    transition: opacity 0.3s;
+    position: fixed;
+    width: 95%;
+    top: 1%;
+    left: 2%;
+    z-index: -1;
+}
+
+.gridButton{
+    cursor:pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.gridButton:hover{
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.searchField{
+    height: 30px;
+}
