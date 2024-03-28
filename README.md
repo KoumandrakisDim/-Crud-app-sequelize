@@ -12,7 +12,11 @@ This is a basic Express CRUD application for managing a list of persons.
 1. Clone the repository:
 
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/your-username/crud-app-sequelize.git
+=======
+   git clone https://github.com/your-username/-Crud-app-sequelize.git
+>>>>>>> 4d30baba67e3b952a71d8743cfccbb36418a6015
 
 2. Navigate to the project directory:
 
